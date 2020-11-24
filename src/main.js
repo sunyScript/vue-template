@@ -9,9 +9,14 @@ import VueLazyload from 'vue-lazyload'
 import * as Sentry from '@sentry/browser'
 import * as Integrations from '@sentry/integrations'
 import ElementUI from 'element-ui'
+import Vselect from '@C/select'
+import Vupload from '@C/upload'
 
 import '@/assets/style/index.scss'
 import '@/permission'
+
+Vue.component('Vselect', Vselect)
+Vue.component('Vupload', Vupload)
 
 Vue.use(ElementUI)
 
