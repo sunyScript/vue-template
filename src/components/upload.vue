@@ -5,6 +5,7 @@
 		v-on='$listeners'
 		:action="action"
 		:show-file-list='false'
+		:on-error='onError'
 		:on-success='onSuccess'
 		:before-upload='beforeUpload'
 	>
@@ -75,12 +76,20 @@ export default {
 				}),reject(false))
 			})
 		},
+		onError(err, file) {
+			this.result({
+				err,
+				file,
+				error: 1,
+				message: '上传图片失败'
+			})
+		},
 		onSuccess(res, file) {
 			this.result({
 				res,
 				file,
 				error: 0,
-				message: '获取网络图片成功'
+				message: '上传图片成功'
 			})
 		},
 		getImageInfo(file) {
