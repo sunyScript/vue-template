@@ -23,6 +23,11 @@
 			:size='1024 * 5'
 			@result='result'
 		/>
+
+		<br/>
+		<br/>
+
+		<Veditor/>
 	</div>
 </template>
 

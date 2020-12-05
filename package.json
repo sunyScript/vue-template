@@ -25,6 +25,7 @@
     },
     "devDependencies": {
         "@sentry/webpack-plugin": "^1.10.0",
+        "@tinymce/tinymce-vue": "3.2.6",
         "@vue/cli-plugin-babel": "~4.4.0",
         "@vue/cli-plugin-eslint": "~4.4.0",
         "@vue/cli-plugin-router": "~4.4.0",
@@ -48,7 +49,7 @@
         "pre-commit": "lint-staged"
     },
     "lint-staged": {
-        "src/**/*.{js,vue}": [
+        "src/**/*.{vue}": [
             "vue-cli-service lint",
             "git add"
         ]

@@ -11,12 +11,14 @@ import * as Integrations from '@sentry/integrations'
 import ElementUI from 'element-ui'
 import Vselect from '@C/select'
 import Vupload from '@C/upload'
+import Veditor from '@C/editor'
 
 import '@/assets/style/index.scss'
 import '@/permission'
 
 Vue.component('Vselect', Vselect)
 Vue.component('Vupload', Vupload)
+Vue.component('Veditor', Veditor)
 
 Vue.use(ElementUI)
 
